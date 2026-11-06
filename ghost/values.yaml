@@ -690,7 +690,7 @@ mysql:
   auth:
     # rootPassword: "password1234"
     # database: bitnami_ghost
-    # username: bn_ghost
+    username: bn_ghost
     # password: "password1234"
     existingSecret: "ghost-mysql"
   ## MySQL Primary configuration
