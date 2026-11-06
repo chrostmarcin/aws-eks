@@ -668,6 +668,16 @@ volumePermissions:
 ## ref: https://github.com/bitnamilegacy/charts/blob/main/bitnamilegacy/mysql/values.yaml
 ##
 mysql:
+  metrics:
+    enabled: true
+    image:
+      registry: docker.io
+      repository: bitnamilegacy/mysqld-exporter
+    service:
+      type: ClusterIP
+      port: 9104
+    serviceMonitor:
+      enabled: false        # true, jeśli masz Prometheus Operator (kube-prometheus-stack)
   image:
        registry: docker.io
        repository: bitnamilegacy/mysql
