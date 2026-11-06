@@ -119,7 +119,7 @@ ghostHost: "k8s-ghost-ghost-23e64abbee-cf381205563ec155.elb.us-east-1.amazonaws.
 ghostPath: /
 ## @param ghostEnableHttps Configure Ghost to build application URLs using https
 ##
-ghostEnableHttps: false
+ghostEnableHttps: true
 ## SMTP mail delivery configuration
 ## ref: https://github.com/bitnamilegacy/containers/tree/main/bitnamilegacy/ghost/#smtp-configuration
 ## @param smtpHost SMTP server host
@@ -688,11 +688,11 @@ mysql:
   ##      https://github.com/bitnamilegacy/containers/tree/main/bitnamilegacy/mysql/#creating-a-database-on-first-run
   ##      https://github.com/bitnamilegacy/containers/tree/main/bitnamilegacy/mysql/#creating-a-database-user-on-first-run
   auth:
-    rootPassword: "password1234"
-    database: bitnami_ghost
-    username: bn_ghost
-    password: "password1234"
-    existingSecret: ""
+    # rootPassword: "password1234"
+    # database: bitnami_ghost
+    # username: bn_ghost
+    # password: "password1234"
+    existingSecret: "ghost-mysql"
   ## MySQL Primary configuration
   ##
   primary:
