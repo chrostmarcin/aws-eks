@@ -112,7 +112,7 @@ ghostUsername: admin
 ghostEmail: twoj@email.com
 ghostBlogTitle: Moj blog
 existingSecret: ghost-secret
-ghostHost: ""          # po utworzeniu LB wpiszesz adres xxxx.elb.amazonaws.com
+ghostHost: "k8s-ghost-ghost-3b43b54492-b791c846fe8a38c8.elb.us-east-1.amazonaws.com"          # po utworzeniu LB wpiszesz adres xxxx.elb.amazonaws.com
 ##
 ## @param ghostPath URL sub path where to server the Ghost application
 ##
